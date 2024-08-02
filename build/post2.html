@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Building my first javascript Project — Lex B</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      body {
+        background: url("./body-bg.png") no-repeat;
+      }
+
+      .open {
+        max-height: 200px;
+      }
+
+      .banner {
+        background: url("./images/subscribe-bg.png") no-repeat center;
+      }
+    </style>
+  </head>
+  <body class="bg-black bg-opacity-60 min-h-screen flex flex-col">
+    <header class="bg-black bg-opacity-90 lg:bg-white fixed top-0 w-full z-50">
+      <nav class="flex justify-between items-center px-5 py-6 md:px-20">
+        <a href="index.html"
+          ><img class="w-24" src="./LexMB..png" alt="icon"
+        /></a>
+
+        <ul
+          class="gap-8 hidden text-black font-semibold font-jost uppercase lg:flex"
+        >
+          <li
+            class="relative transition-all duration-200 hover:text-cobaltblue"
+          >
+            <a
+              class="after:absolute after:content[''] after:left-0 after:top-10 after:h-2 after:bg-royalblue after:w-0 after:hover:w-full after:transition-all after:duration-300"
+              href="index.html"
+              >Home</a
+            >
+          </li>
+
+          <li
+            class="link relative transition-all duration-200 hover:text-cobaltblue"
+          >
+            <a
+              class="after:absolute after:content[''] after:left-0 after:top-10 after:h-2 after:bg-royalblue after:w-0 after:hover:w-full after:transition-all after:duration-300"
+              href="#contact"
+              >contact</a
+            >
+          </li>
+        </ul>
+
+        <!-- hamburger btn -->
+        <div class="lg:hidden flex gap-4">
+          <button
+            id="hamburger-btn"
+            class="text-3xl cursor-pointer relative w-8 h-8"
+          >
+            <!-- &#9776; -->
+            <div
+              class="toggle-btn bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:transition-all before:duration-500 before:-translate-x-4 before:-translate-y-3 after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:transition-all after:duration-500 after:-translate-x-4 after:translate-y-3"
+            ></div>
+          </button>
+        </div>
+      </nav>
+
+      <!-- mobile menu -->
+      <nav
+        id="mobile-menu"
+        class="w-full max-h-0 overflow-hidden px-6 md:px-12 transition-all duration-500 z-50"
+      >
+        <ul class="text-white pb-8 uppercase font-semibold flex flex-col gap-2">
+          <li
+            class="pb-2 border-b border-gray-500 transition-all duration-200 hover:text-royalblue"
+          >
+            <a href="index.html">Home</a>
+          </li>
+
+          <li class="link transition-all duration-200 hover:text-royalblue">
+            <a href="#contact">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex-1 pt-20">
+      <section class="mb-32">
+        <div
+          class="relative md:w-600 banner h-64 lg:h-96 left-1/2 -translate-x-1/2"
+        >
+          <div
+            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white"
+          >
+            <h1
+              class="uppercase text-4xl font-bold font-jost mb-2 lg:text-6xl text-center"
+            >
+              Blog
+            </h1>
+
+            <p class="text-center">
+              <a
+                class="transition-all duration-200 hover:opacity-70"
+                href="index.html"
+                >Home </a
+              >- Building my first Javascript project
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Contents  -->
+      <section class="mb-32 md:px-20 lg:px-56">
+        <div
+          class="container bg-white bg-opacity-85 px-6 py-8 md:rounded-xl md:px-16 md:py-20 lg:px-20"
+        >
+          <article>
+            <div class="mb-4 text-lg">
+              <h1
+                class="text-3xl text-center font-jost font-bold mb-4 lg:text-5xl"
+              >
+                Building My First JavaScript Project: A Tetris Game
+              </h1>
+              <p class="mb-6">
+                Starting your first JavaScript project can be both exciting and
+                challenging. Choosing a classic game like Tetris is a fantastic
+                way to dive into the world of JavaScript.
+              </p>
+
+              <p>
+                This project not only introduces you to fundamental programming
+                concepts but also offers a rewarding experience as you see your
+                game come to life.
+              </p>
+            </div>
+
+            <div class="my-16 flex justify-center w-full h-auto">
+              <img
+                class="w-full object-cover"
+                src="images/tetris.jpg"
+                alt="Tetris"
+              />
+            </div>
+
+            <div class="mb-12 text-lg">
+              <h2 class="mb-2 font-bold text-2xl">Why Choose Tetris?</h2>
+              <p class="mb-6">
+                Tetris is an excellent choice for a first project because it
+                encompasses various core programming concepts, such as working
+                with grids and coordinate systems, implementing game logic,
+                handling user input through keyboard events, and rendering
+                elements on the screen using HTML and CSS.
+              </p>
+
+              <p>
+                These skills are transferable to many other types of projects
+                you'll encounter as you continue your coding journey.
+              </p>
+            </div>
+
+            <div class="mb-12 text-lg">
+              <h2 class="mb-2 font-bold text-2xl">The Learning Experience</h2>
+              <p class="mb-6">
+                Building Tetris allows you to understand how to manage game
+                state, detect collisions, and implement game loops. You'll also
+                get hands-on experience with drawing and updating elements
+                dynamically, which is a crucial skill for any web developer.
+              </p>
+
+              <p>
+                Moreover, adding features like scoring and increasing difficulty
+                will challenge you to think critically and solve problems
+                creatively.
+              </p>
+            </div>
+
+            <div class="mb-12">
+              <h2 class="mb-2 font-bold text-2xl">
+                Key Components of the Project
+              </h2>
+
+              <ul class="list-disc ps-8 text-lg flex flex-col gap-4">
+                <li>
+                  <span class="font-bold">Grid and Coordinate Systems: </span
+                  >You'll learn to create and manipulate a grid layout, which is
+                  essential for positioning the Tetris pieces (Tetrominoes)
+                  accurately.
+                </li>
+                <li>
+                  <span class="font-bold">Game Logic: </span>
+                  Implementing the logic for moving Tetrominoes, rotating them,
+                  and checking for completed lines will deepen your
+                  understanding of control flow and conditionals.
+                </li>
+                <li>
+                  <span class="font-bold">Event Handling: </span>Handling
+                  keyboard inputs to move and rotate the Tetrominoes in
+                  real-time teaches you about event listeners and interaction
+                  handling.
+                </li>
+                <li>
+                  <span class="font-bold">Rendering: </span>Drawing the game
+                  board and Tetrominoes using HTML and CSS, and updating them
+                  with JavaScript, gives you practical experience with DOM
+                  manipulation.
+                </li>
+              </ul>
+            </div>
+
+            <div class="mb-32 text-lg">
+              <h2 class="mb-2 font-bold text-2xl">Challenges and Rewards</h2>
+              <p class="mb-6">
+                As you progress through the project, you'll face challenges such
+                as handling edge cases where Tetrominoes collide or go out of
+                bounds. These challenges are valuable learning opportunities
+                that will improve your problem-solving skills.
+              </p>
+
+              <p>
+                The reward of seeing your game work and being able to play it is
+                immensely satisfying and provides a tangible sense of
+                accomplishment.
+              </p>
+            </div>
+
+            <div>
+              <h2 class="text-2xl font-bold mb-4">Conclusion</h2>
+              <p class="mb-6">
+                Building your first JavaScript project, like a Tetris game, is a
+                great way to solidify your understanding of programming
+                concepts. It’s a fun and rewarding experience that will give you
+                a solid foundation for more complex projects. Happy coding!
+              </p>
+
+              <p>
+                Embark on your Tetris project with confidence, knowing that
+                every line of code you write brings you one step closer to
+                becoming a proficient JavaScript developer. Happy coding!
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- related -->
+      <section class="bg-white bg-opacity-80 mb-20">
+        <div class="px-6 py-10 md:pt-10 md:pb-32 md:px-20">
+          <h1 class="mb-6 font-jost font-bold text-4xl md:text-5xl">Related</h1>
+          <div class="flex flex-col gap-6 lg:flex-row lg:gap-10">
+            <a
+              class="transition-all duration-300 hover:scale-105"
+              href="post3.html"
+            >
+              <div class="flex gap-6 items-center">
+                <div class="w-full h-auto">
+                  <img
+                    class="w-full object-cover rounded-xl md:w-420"
+                    src="images/responsive web design.webp"
+                    alt="blog"
+                  />
+                </div>
+                <div class="w-full">
+                  <h2 class="font-bold text-2xl">Post 3</h2>
+                  <p class="capitalize font-medium lg:text-lg">
+                    The Importance of Responsive Design
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a
+              class="transition-all duration-300 hover:scale-105"
+              href="blog.html"
+            >
+              <div class="flex gap-6 items-center">
+                <div class="w-full h-auto">
+                  <img
+                    class="w-full bg-black bg-opacity-25 object-cover rounded-xl md:w-72"
+                    src="images/html css.png"
+                    alt="blog"
+                  />
+                </div>
+                <div class="w-full">
+                  <h2 class="font-bold text-2xl">Post 1</h2>
+                  <p class="capitalize font-medium lg:text-lg">
+                    Understanding the basics of HTML and CSS
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="relative">
+          <div
+            class="absolute w-full h-40 left-0 bottom-0 bg-white -z-10"
+          ></div>
+          <div
+            class="text-white bg-royalblue p-6 md:px-8 mx-6 md:mx-20 md:py-32 lg:md:px-24"
+          >
+            <h1 class="font-jost text-center text-3xl mb-4 font-bold uppercase">
+              Contact Me
+            </h1>
+            <p class="text-center mb-6">
+              If you have any questions or would like to discuss web
+              development, feel free to reach out to me!
+            </p>
+            <div
+              class="flex items-center justify-center flex-col gap-4 md:flex-row"
+            >
+              <button
+                class="text-sm py-2 px-6 bg-white text-black font-bold rounded-lg border-black border-2 transition-all duration-300 hover:bg-cobaltblue hover:text-white hover:border-white"
+              >
+                <a href="contact.html">GET STARTED</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-white flex items-center justify-center pt-20 pb-32">
+      <nav class="flex flex-col items-center">
+        <a class="mb-4" href="index.html"
+          ><img class="w-32" src="./LexMB..png" alt="icon"
+        /></a>
+
+        <ul class="uppercase flex items-center gap-3 md:gap-6 mb-4 font-bold">
+          <li class="transition-all duration-300 hover:text-cobaltblue">
+            <a href="index.html">home</a>
+          </li>
+
+          <li class="link transition-all duration-300 hover:text-cobaltblue">
+            <a href="#contact">contact</a>
+          </li>
+        </ul>
+        <p>Copyright ©2024 All rights reserved</p>
+      </nav>
+    </footer>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EasePack.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

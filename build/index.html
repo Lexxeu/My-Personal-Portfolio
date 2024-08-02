@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lex B</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      body {
+        background: url("./body-bg.png") no-repeat;
+      }
+
+      .open {
+        max-height: 200px;
+      }
+    </style>
+  </head>
+  <body class="bg-black bg-opacity-60 scroll-smooth">
+    <header class="bg-black bg-opacity-90 lg:bg-white fixed top-0 w-full z-50">
+      <nav class="flex justify-between items-center px-5 py-6 md:px-20">
+        <a href="index.html"
+          ><img class="w-24" src="./LexMB..png" alt="icon"
+        /></a>
+
+        <ul
+          class="gap-8 hidden text-black font-semibold font-jost uppercase lg:flex"
+        >
+          <li
+            class="link relative transition-all duration-200 hover:text-cobaltblue"
+          >
+            <a
+              class="after:absolute after:content[''] after:left-0 after:top-10 after:h-2 after:bg-royalblue after:w-0 after:hover:w-full after:transition-all after:duration-300"
+              href="#hero"
+              >Home</a
+            >
+          </li>
+
+          <li
+            class="link relative transition-all duration-200 hover:text-royalblue"
+          >
+            <a
+              class="after:absolute after:content[''] after:left-0 after:top-10 after:h-2 after:bg-royalblue after:w-0 after:hover:w-full after:transition-all after:duration-300"
+              href="#projects"
+              >Projects</a
+            >
+          </li>
+
+          <li
+            class="link relative transition-all duration-200 hover:text-cobaltblue"
+          >
+            <a
+              class="after:absolute after:content[''] after:left-0 after:top-10 after:h-2 after:bg-royalblue after:w-0 after:hover:w-full after:transition-all after:duration-300"
+              href="#blog"
+              >blog</a
+            >
+          </li>
+
+          <li
+            class="link relative transition-all duration-200 hover:text-cobaltblue"
+          >
+            <a
+              class="after:absolute after:content[''] after:left-0 after:top-10 after:h-2 after:bg-royalblue after:w-0 after:hover:w-full after:transition-all after:duration-300"
+              href="#contact"
+              >contact</a
+            >
+          </li>
+        </ul>
+
+        <!-- hamburger btn -->
+        <div class="lg:hidden flex gap-4">
+          <button
+            id="hamburger-btn"
+            class="text-3xl cursor-pointer relative w-8 h-8"
+          >
+            <!-- &#9776; -->
+            <div
+              class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:transition-all before:duration-500 before:-translate-x-4 before:-translate-y-3 after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:transition-all after:duration-500 after:-translate-x-4 after:translate-y-3"
+            ></div>
+          </button>
+        </div>
+      </nav>
+
+      <!-- mobile menu -->
+      <nav
+        id="mobile-menu"
+        class="w-full max-h-0 overflow-hidden px-6 md:px-12 transition-all duration-500 z-50"
+      >
+        <ul class="text-white pb-8 uppercase font-semibold flex flex-col gap-2">
+          <li
+            class="link pb-2 border-b border-gray-500 transition-all duration-200 hover:text-royalblue"
+          >
+            <a href="index.html">Home</a>
+          </li>
+          <li
+            class="link pb-2 border-b border-gray-500 transition-all duration-200 hover:text-royalblue"
+          >
+            <a href="#projects">Projects</a>
+          </li>
+
+          <li
+            class="link pb-2 border-b border-gray-500 transition-all duration-200 hover:text-royalblue"
+          >
+            <a href="#blog">blog</a>
+          </li>
+
+          <li class="link transition-all duration-200 hover:text-royalblue">
+            <a href="#contact">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="pt-36 md:pt-52">
+      <div class="px-6 md:px-20">
+        <!-- Hero -->
+        <section
+          id="hero"
+          class="text-white mb-24 font-jost lg:flex lg:justify-around md:mb-40"
+        >
+          <div class="hero-text-fade">
+            <div class="flex w-full items-center gap-6">
+              <h1 class="uppercase text-4xl mb-6">hello</h1>
+              <div class="w-full h-1 bg-white -translate-y-3"></div>
+            </div>
+            <div class="relative mb-6">
+              <h1 class="text-6xl font-semibold uppercase">
+                I am Lex Marvin B.
+              </h1>
+              <h1
+                class="absolute -top-12 md:-top-20 left-0 text-8xl md:text-9xl opacity-20 font-semibold"
+              >
+                lexMB
+              </h1>
+            </div>
+            <p class="hero-text-fade uppercase text-2xl">
+              <span class="text"></span>
+              <!-- Front-End Web Developer -->
+            </p>
+            <button
+              class="uppercase font-roboto px-8 py-3 text-white bg-royalblue text-sm font-medium mt-8 border-2 border-white transition-all duration-300 hover:bg-cobaltblue rounded-lg"
+            >
+              <a href="contact.html">hire me</a>
+            </button>
+          </div>
+          <div class="hidden lg:block hero-fade-in">
+            <img
+              class="h-auto w-420"
+              src="images/home-right.png.webp"
+              alt="hero"
+            />
+          </div>
+        </section>
+
+        <!-- Introduction -->
+
+        <section
+          class="fade-in flex justify-center mb-32 md:gap-4 md:mb-52 lg:gap-20 xl:gap-32 text-white"
+        >
+          <div class="hidden md:block fade-in">
+            <img
+              class="h-auto w-full lg:h-420"
+              src="images/about-us.png.webp"
+              alt="Introduction"
+            />
+          </div>
+
+          <div
+            class="md:bg-white rounded-3xl bg-opacity-60 p-6 font-roboto md:max-w-72 lg:max-w-96 transition-all duration-300 md:shadow-xl md:hover:shadow-cobaltblue"
+          >
+            <h1
+              class="font-jost font-semibold text-3xl uppercase mb-6 md:text-4xl md:text-black md:opacity-70 lg:text-5xl"
+            >
+              about me
+            </h1>
+            <p
+              class="text-lg mb-6 font-bold md:text-xl md:text-black md:opacity-70"
+            >
+              Hi, I'm Lex, an aspiring web developer passionate about creating
+              clean and user-friendly websites. I recently transitioned into web
+              development to combine my love for design with technology.
+            </p>
+            <p class="text-lg font-bold md:text-black md:opacity-70">
+              I'm eager to learn and grow in this field.
+            </p>
+          </div>
+        </section>
+
+        <!-- Service Offers -->
+        <section class="font-roboto mb-40">
+          <h1
+            class="mb-8 text-center font-jost font-semibold text-3xl uppercase text-black opacity-90 md:text-4xl lg:text-5xl"
+          >
+            Service offers
+          </h1>
+          <div class="cards flex flex-col gap-8 lg:flex-row">
+            <div
+              id="container"
+              class="relative overflow-hidden bg-white p-12 w-full flex flex-col items-center rounded-2xl border-2 border-transparent transition-all duration-300 shadow-xl hover:shadow-cobaltblue hover:text-white hover:border-white"
+            >
+              <div
+                id="fill"
+                class="w-full h-full absolute -bottom-full left-0 bg-royalblue z-0"
+              ></div>
+              <img
+                class="h-auto w-16 mb-6 z-40"
+                src="images/s2.png.webp"
+                alt="logo"
+              />
+              <h1 class="font-jost font-bold text-xl mb-4 md:text-2xl z-40">
+                UI/UX DESIGN
+              </h1>
+              <div class="font-medium opacity-80 md:text-lg">
+                <p class="mb-4">
+                  My UI/UX Design service focuses on creating visually appealing
+                  and highly functional interfaces that provide an optimal user
+                  experience.
+                </p>
+                <p>
+                  My goal is to blend aesthetics with usability to ensure that
+                  your digital products not only look good but are also
+                  intuitive and user-friendly.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="container"
+              class="relative overflow-hidden bg-white p-12 w-full flex flex-col items-center rounded-2xl border-2 border-transparent transition-all duration-300 shadow-xl hover:shadow-cobaltblue hover:text-white hover:border-white"
+            >
+              <div
+                id="fill"
+                class="w-full h-full absolute -bottom-full left-0 bg-royalblue z-0"
+              ></div>
+              <img
+                class="h-auto w-16 mb-6 z-40"
+                src="images/s3.png.webp"
+                alt="logo"
+              />
+              <h1 class="font-jost font-bold text-xl mb-4 md:text-2xl z-40">
+                WEB DESIGN
+              </h1>
+              <div class="font-medium md:text-lg opacity-80">
+                <p class="mb-4">
+                  My Web Design service is dedicated to crafting beautiful,
+                  responsive, and user-friendly websites that effectively
+                  represent your brand and engage your audience.
+                </p>
+                <p>
+                  I combine aesthetics with functionality to create websites
+                  that not only look stunning but also provide a seamless user
+                  experience across all devices.
+                </p>
+              </div>
+            </div>
+            <div
+              id="container"
+              class="relative overflow-hidden bg-white p-12 w-full flex flex-col items-center rounded-2xl border-2 border-transparent transition-all duration-300 shadow-xl hover:shadow-cobaltblue hover:text-white hover:border-white"
+            >
+              <div
+                id="fill"
+                class="w-full h-full absolute -bottom-full left-0 bg-royalblue z-0"
+              ></div>
+              <img
+                class="h-auto w-16 mb-6 z-40"
+                src="images/s1.png.webp"
+                alt="logo"
+              />
+              <h1 class="font-jost font-bold text-xl mb-4 md:text-2xl z-40">
+                WEB DEVELOPMENT
+              </h1>
+              <div class="font-medium opacity-80 md:text-lg">
+                <p class="mb-4">
+                  My Web Development service offers comprehensive solutions to
+                  create robust, scalable, and dynamic websites tailored to meet
+                  your business needs.
+                </p>
+                <p>
+                  I ensure a seamless and high-performing web presence that
+                  drives engagement and growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Done Projects -->
+        <section id="projects" class="font-roboto mb-40">
+          <h1
+            class="uppercase font-jost text-3xl font-semibold mb-12 md:text-4xl lg:text-5xl"
+          >
+            done projects
+          </h1>
+          <div
+            class="cards2 grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-12 lg:gap-4"
+          >
+            <div
+              id="container"
+              class="overflow-hidden lg:col-span-4 relative bg-white p-6 transition-all duration-300 border-transparent border-2 shadow-xl hover:shadow-cobaltblue hover:text-white hover:border-white"
+            >
+              <div
+                id="fill"
+                class="w-full h-full absolute -bottom-full left-0 bg-royalblue z-20"
+              ></div>
+              <a
+                class="relative z-40"
+                href="https://the-coffee-shop.onrender.com"
+              >
+                <img
+                  class="w-full h-auto mb-4 lg:h-52 object-cover border-white border-2"
+                  src="images/projects/coffee shop landing page.png"
+                  alt="project"
+                />
+
+                <h2 class="font-jost font-semibold text-xl mb-5">
+                  Coffee Shop Landing Page
+                </h2>
+                <h1 class="font-bold mb-2">Technologies used:</h1>
+                <p class="italic">HTML, CSS, JavaScript, TailwindCSS</p>
+              </a>
+            </div>
+
+            <div
+              id="container"
+              class="relative lg:col-span-4 overflow-hidden bg-white p-6 transition-all duration-300 shadow-xl hover:shadow-cobaltblue border-transparent border-2 hover:border-white hover:text-white"
+            >
+              <div
+                id="fill"
+                class="w-full h-full absolute -bottom-full left-0 bg-royalblue z-10"
+              ></div>
+              <a
+                class="relative z-40"
+                href="https://the-gallery-1ajd.onrender.com"
+              >
+                <img
+                  class="w-full h-auto mb-4 lg:h-52 object-cover border-white border-2"
+                  src="images/projects/photo gallery.png"
+                  alt="project"
+                />
+
+                <h2 class="font-jost font-semibold text-xl mb-5">
+                  Photo Gallery
+                </h2>
+                <h1 class="font-bold mb-2">Technologies used:</h1>
+                <p class="italic">HTML, CSS, JavaScript, TailwindCSS</p>
+              </a>
+            </div>
+
+            <div
+              id="container"
+              class="relative lg:col-span-4 overflow-hidden bg-white p-6 transition-all duration-300 shadow-xl hover:shadow-cobaltblue hover:text-white border-2 border-transparent hover:border-white"
+            >
+              <div
+                id="fill"
+                class="w-full h-full absolute -bottom-full left-0 bg-royalblue z-10"
+              ></div>
+              <a class="relative z-40" href="https://earth-store.onrender.com">
+                <img
+                  class="w-full h-auto mb-4 lg:h-52 object-cover border-white border-2"
+                  src="images/projects/earth store e-commerce site.png"
+                  alt="project"
+                />
+
+                <h2 class="font-jost font-semibold text-xl mb-5">
+                  E-commerce website
+                </h2>
+                <h1 class="font-bold mb-2">Technologies used:</h1>
+                <p class="italic">HTML, CSS, JavaScript, TailwindCSS</p>
+              </a>
+            </div>
+
+            <div
+              id="container"
+              class="relative lg:col-span-6 overflow-hidden bg-white p-6 transition-all duration-300 shadow-xl hover:shadow-cobaltblue hover:text-white border-2 border-transparent hover:border-white"
+            >
+              <div
+                id="fill"
+                class="w-full h-full absolute -bottom-full left-0 bg-royalblue z-10"
+              ></div>
+              <a
+                class="relative z-40"
+                href="https://sample-portfolio.onrender.com"
+              >
+                <img
+                  class="w-full h-auto mb-4 lg:h-52 object-cover border-white border-2"
+                  src="images/projects/portfolio website.png"
+                  alt="project"
+                />
+
+                <h2 class="font-jost font-semibold text-xl mb-5">
+                  Sample Portfolio Website
+                </h2>
+                <h1 class="font-bold mb-2">Technologies used:</h1>
+                <p class="italic">HTML, CSS, JavaScript, Bootstrap v5</p>
+              </a>
+            </div>
+
+            <div
+              id="container"
+              class="relative lg:col-span-6 overflow-hidden bg-white p-6 transition-all duration-300 shadow-xl hover:shadow-cobaltblue hover:text-white border-2 border-transparent hover:border-white"
+            >
+              <div
+                id="fill"
+                class="w-full h-full absolute -bottom-full left-0 bg-royalblue z-10"
+              ></div>
+              <a
+                class="relative z-40"
+                href="https://lexeu-tetris-game.onrender.com"
+              >
+                <img
+                  class="w-full h-auto mb-4 lg:h-52 object-cover border-white border-2"
+                  src="images/projects/Tetris game.png"
+                  alt="project"
+                />
+
+                <h2 class="font-jost font-semibold text-xl mb-5">Tetris</h2>
+                <h1 class="font-bold mb-2">Technologies used:</h1>
+                <p class="italic">HTML, CSS, JavaScript</p>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Blog -->
+        <section id="blog" class="flex flex-col items-center pb-40">
+          <h1
+            class="font-jost text-3xl font-semibold mb-6 md:text-4xl lg:text-5xl md:mb-10"
+          >
+            BLOG
+          </h1>
+          <h1
+            class="font-jost self-start mb-8 font-semibold text-2xl md:text-3xl"
+          >
+            My Learning Journey:
+          </h1>
+          <div class="cards3 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div
+              class="bg-white bg-opacity-70 p-6 rounded-3xl flex flex-col items-center"
+            >
+              <img
+                class="w-60 h-auto mb-8"
+                src="images/html css.png"
+                alt="blog"
+              />
+              <p class="self-start font-jost text-lg font-medium mt-auto">
+                Post 1: Understanding the Basics of HTML and CSS
+              </p>
+            </div>
+            <div
+              class="bg-white bg-opacity-70 p-6 rounded-3xl flex flex-col items-center"
+            >
+              <img
+                class="w-56 h-56 mb-8 object-cover md:w-full md:h-full"
+                src="images/tetris.jpg"
+                alt="blog"
+              />
+              <p class="self-start font-jost text-lg font-medium mt-auto">
+                Post 2: Building My First JavaScript Project
+              </p>
+            </div>
+            <div
+              class="bg-white h-auto bg-opacity-70 p-6 rounded-3xl flex flex-col items-center"
+            >
+              <img
+                class="w-60 h-auto mb-8 md:w-full"
+                src="images/responsive web design.webp"
+                alt="blog"
+              />
+              <p class="self-start font-jost text-lg font-medium mt-auto">
+                Post 3: The Importance of Responsive Design
+              </p>
+            </div>
+          </div>
+          <button
+            class="cards3 px-4 py-2 bg-royalblue rounded-full text-white font-bold transition-all duration-300 border-2 border-white hover:bg-white hover:text-black hover:border-cobaltblue"
+          >
+            <a href="blog.html">Read More</a>
+          </button>
+        </section>
+      </div>
+
+      <!-- Contact -->
+      <div id="contact" class="relative">
+        <div class="absolute w-full h-40 left-0 bottom-0 bg-white -z-10"></div>
+        <section
+          class="text-white bg-royalblue p-6 md:px-8 mx-6 md:mx-20 md:py-32 lg:md:px-24"
+        >
+          <h1 class="font-jost text-center text-3xl mb-4 font-bold uppercase">
+            Contact Me
+          </h1>
+          <p class="text-center mb-6">
+            If you have any questions or would like to discuss web development,
+            feel free to reach out to me!
+          </p>
+          <div
+            class="flex items-center justify-center flex-col gap-4 md:flex-row"
+          >
+            <button
+              class="text-sm py-2 px-6 bg-white text-black font-bold rounded-lg border-black border-2 transition-all duration-300 hover:bg-cobaltblue hover:text-white hover:border-white"
+            >
+              <a href="contact.html">GET STARTED</a>
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="bg-white flex items-center justify-center pt-20 pb-32">
+      <nav class="flex flex-col items-center">
+        <a class="mb-4" href=""
+          ><img class="w-32" src="./LexMB..png" alt="icon"
+        /></a>
+
+        <ul class="uppercase flex items-center gap-3 md:gap-6 mb-4 font-bold">
+          <li class="link transition-all duration-300 hover:text-cobaltblue">
+            <a href="#hero">home</a>
+          </li>
+
+          <li
+            class="link border-gray-500 transition-all duration-200 hover:text-royalblue"
+          >
+            <a href="#projects">Projects</a>
+          </li>
+
+          <li class="link transition-all duration-300 hover:text-cobaltblue">
+            <a href="#blog">blog</a>
+          </li>
+
+          <li class="link transition-all duration-300 hover:text-cobaltblue">
+            <a href="#contact">contact</a>
+          </li>
+        </ul>
+        <p>Copyright ©2024 All rights reserved</p>
+      </nav>
+    </footer>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EasePack.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

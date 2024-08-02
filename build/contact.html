@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Lex B</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      body {
+        background: url("./body-bg.png") no-repeat;
+      }
+
+      .open {
+        max-height: 200px;
+      }
+
+      .banner {
+        background: url("./images/subscribe-bg.png") no-repeat center;
+      }
+    </style>
+  </head>
+  <body class="bg-black bg-opacity-60 min-h-screen flex flex-col">
+    <header class="bg-black bg-opacity-90 lg:bg-white fixed top-0 w-full z-50">
+      <nav class="flex justify-between items-center px-5 py-6 md:px-20">
+        <a href="index.html"
+          ><img class="w-24" src="./LexMB..png" alt="icon"
+        /></a>
+
+        <ul
+          class="gap-8 hidden text-black font-semibold font-jost uppercase lg:flex"
+        >
+          <li
+            class="relative transition-all duration-200 hover:text-cobaltblue"
+          >
+            <a
+              class="after:absolute after:content[''] after:left-0 after:top-10 after:h-2 after:bg-royalblue after:w-0 after:hover:w-full after:transition-all after:duration-300"
+              href="index.html"
+              >Home</a
+            >
+          </li>
+
+          <li
+            class="relative transition-all duration-200 hover:text-cobaltblue"
+          >
+            <a
+              class="after:absolute after:content[''] after:left-0 after:top-10 after:h-2 after:bg-royalblue after:w-0 after:hover:w-full after:transition-all after:duration-300"
+              href="blog.html"
+              >blog</a
+            >
+          </li>
+        </ul>
+
+        <!-- hamburger btn -->
+        <div class="lg:hidden flex gap-4">
+          <button
+            id="hamburger-btn"
+            class="text-3xl cursor-pointer relative w-8 h-8"
+          >
+            <!-- &#9776; -->
+            <div
+              class="toggle-btn bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:transition-all before:duration-500 before:-translate-x-4 before:-translate-y-3 after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:transition-all after:duration-500 after:-translate-x-4 after:translate-y-3"
+            ></div>
+          </button>
+        </div>
+      </nav>
+
+      <!-- mobile menu -->
+      <nav
+        id="mobile-menu"
+        class="w-full max-h-0 overflow-hidden px-6 md:px-12 transition-all duration-500 z-50"
+      >
+        <ul class="text-white pb-8 uppercase font-semibold flex flex-col gap-2">
+          <li
+            class="pb-2 border-b border-gray-500 transition-all duration-200 hover:text-royalblue"
+          >
+            <a href="index.html">Home</a>
+          </li>
+
+          <li
+            class="pb-2 border-b border-gray-500 transition-all duration-200 hover:text-royalblue"
+          >
+            <a href="blog.html">blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex-1 pt-20 md:px-20">
+      <!-- hero -->
+      <section class="mb-32">
+        <div
+          class="relative md:w-600 banner h-64 lg:h-96 left-1/2 -translate-x-1/2"
+        >
+          <div
+            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white"
+          >
+            <h1
+              class="uppercase text-4xl font-bold font-jost mb-2 lg:text-6xl text-center"
+            >
+              Contact
+            </h1>
+
+            <p class="text-center">
+              <a
+                class="transition-all duration-200 hover:opacity-70"
+                href="index.html"
+                >Home </a
+              >- Contact
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="bg-white mb-20 px-12 py-12 md:px-32 md:py-20 md:rounded-3xl"
+      >
+        <h1
+          class="font-jost capitalize text-end font-bold text-4xl mb-10 lg:text-6xl"
+        >
+          Contact me
+        </h1>
+        <div class="relative">
+          <div class="hidden lg:block lg:absolute lg:-left-20 lg:-top-5">
+            <img
+              class="w-full h-auto"
+              src="images/Coding 3.png"
+              alt="illustration"
+            />
+          </div>
+          <div class="lg:flex lg:justify-end">
+            <form
+              action="https://formsubmit.co/lexbasuel@gmail.com"
+              method="post"
+              class="w-full flex flex-col gap-2 lg:w-1/2"
+            >
+              <label for="name" class="block mb-2">Name:</label>
+              <input
+                type="text"
+                name="name"
+                class="w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md focus:outline-none focus:ring-cobaltblue focus:border-cobaltblue"
+                placeholder="Enter your name"
+                required
+              />
+
+              <label for="email" class="block mb-2 mt-4">Email:</label>
+              <input
+                type="email"
+                name="email"
+                class="w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md focus:outline-none focus:ring-cobaltblue focus:border-cobaltblue"
+                placeholder="Enter your email"
+                required
+              />
+
+              <label for="message" class="block mb-2 mt-4">Message:</label>
+              <textarea
+                name="message"
+                class="w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md focus:outline-none focus:ring-cobaltblue focus:border-cobaltblue"
+                placeholder="Enter your message"
+                rows="6"
+                required
+              ></textarea>
+
+              <button
+                type="submit"
+                class="self-end w-1/2 mt-4 bg-cobaltblue text-white font-bold py-2 px-4 rounded-md hover:bg-royalblue transition-all duration-300"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-white flex items-center justify-center pt-20 pb-32">
+      <nav class="flex flex-col items-center">
+        <a class="mb-4" href="index.html"
+          ><img class="w-32" src="./LexMB..png" alt="icon"
+        /></a>
+
+        <ul class="uppercase flex items-center gap-3 md:gap-6 mb-4 font-bold">
+          <li class="transition-all duration-300 hover:text-cobaltblue">
+            <a href="index.html">home</a>
+          </li>
+
+          <li class="transition-all duration-300 hover:text-cobaltblue">
+            <a href="blog.html">blog</a>
+          </li>
+        </ul>
+        <p>Copyright ©2024 All rights reserved</p>
+      </nav>
+    </footer>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EasePack.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

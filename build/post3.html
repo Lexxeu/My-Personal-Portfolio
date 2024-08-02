@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Importance of responsive design — Lex B</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      body {
+        background: url("./body-bg.png") no-repeat;
+      }
+
+      .open {
+        max-height: 200px;
+      }
+
+      .banner {
+        background: url("./images/subscribe-bg.png") no-repeat center;
+      }
+    </style>
+  </head>
+  <body class="bg-black bg-opacity-60 min-h-screen flex flex-col">
+    <header class="bg-black bg-opacity-90 lg:bg-white fixed top-0 w-full z-50">
+      <nav class="flex justify-between items-center px-5 py-6 md:px-20">
+        <a href="index.html"
+          ><img class="w-24" src="./LexMB..png" alt="icon"
+        /></a>
+
+        <ul
+          class="gap-8 hidden text-black font-semibold font-jost uppercase lg:flex"
+        >
+          <li
+            class="relative transition-all duration-200 hover:text-cobaltblue"
+          >
+            <a
+              class="after:absolute after:content[''] after:left-0 after:top-10 after:h-2 after:bg-royalblue after:w-0 after:hover:w-full after:transition-all after:duration-300"
+              href="index.html"
+              >Home</a
+            >
+          </li>
+
+          <li
+            class="link relative transition-all duration-200 hover:text-cobaltblue"
+          >
+            <a
+              class="after:absolute after:content[''] after:left-0 after:top-10 after:h-2 after:bg-royalblue after:w-0 after:hover:w-full after:transition-all after:duration-300"
+              href="#contact"
+              >contact</a
+            >
+          </li>
+        </ul>
+
+        <!-- hamburger btn -->
+        <div class="lg:hidden flex gap-4">
+          <button
+            id="hamburger-btn"
+            class="text-3xl cursor-pointer relative w-8 h-8"
+          >
+            <!-- &#9776; -->
+            <div
+              class="toggle-btn bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:transition-all before:duration-500 before:-translate-x-4 before:-translate-y-3 after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:transition-all after:duration-500 after:-translate-x-4 after:translate-y-3"
+            ></div>
+          </button>
+        </div>
+      </nav>
+
+      <!-- mobile menu -->
+      <nav
+        id="mobile-menu"
+        class="w-full max-h-0 overflow-hidden px-6 md:px-12 transition-all duration-500 z-50"
+      >
+        <ul class="text-white pb-8 uppercase font-semibold flex flex-col gap-2">
+          <li
+            class="pb-2 border-b border-gray-500 transition-all duration-200 hover:text-royalblue"
+          >
+            <a href="index.html">Home</a>
+          </li>
+
+          <li class="link transition-all duration-200 hover:text-royalblue">
+            <a href="#contact">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex-1 pt-20">
+      <section class="mb-32">
+        <div
+          class="relative md:w-600 banner h-64 lg:h-96 left-1/2 -translate-x-1/2"
+        >
+          <div
+            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white"
+          >
+            <h1
+              class="uppercase text-4xl font-bold font-jost mb-2 lg:text-6xl text-center"
+            >
+              Blog
+            </h1>
+
+            <p class="text-center">
+              <a
+                class="transition-all duration-200 hover:opacity-70"
+                href="index.html"
+                >Home </a
+              >- The Importance of Responsive Design
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Contents  -->
+      <section class="mb-32 md:px-20 lg:px-56">
+        <div
+          class="container bg-white bg-opacity-85 px-6 py-8 md:rounded-xl md:px-16 md:py-20 lg:px-20"
+        >
+          <article>
+            <div class="mb-4 text-lg">
+              <h1
+                class="text-3xl text-center font-jost font-bold mb-4 lg:text-5xl"
+              >
+                The Importance of Responsive Design in Web Development
+              </h1>
+              <p class="mb-6">
+                In today's digital age, having a strong online presence is
+                crucial for businesses and individuals alike. One of the key
+                components of a successful online presence is a well-designed
+                website.
+              </p>
+
+              <p>
+                However, it's not just about aesthetics and functionality
+                anymore; it's also about ensuring that your website is
+                accessible and user-friendly across a variety of devices. This
+                is where responsive design comes into play.
+              </p>
+            </div>
+
+            <div class="my-16 flex justify-center w-full h-auto">
+              <img
+                class="w-full object-cover"
+                src="images/responsive web design.webp"
+                alt="responsive web design"
+              />
+            </div>
+
+            <div class="mb-12 text-lg">
+              <h2 class="mb-2 font-bold text-2xl">
+                What is Responsive Design?
+              </h2>
+              <p class="mb-6">
+                Responsive design is an approach to web development that ensures
+                a website looks and functions well on all devices, from desktop
+                computers to tablets and smartphones.
+              </p>
+
+              <p>
+                The primary goal of responsive design is to provide an optimal
+                user experience, regardless of the device being used. This
+                involves using flexible layouts, images, and CSS media queries
+                to adapt the website's design and content to different screen
+                sizes and resolutions.
+              </p>
+            </div>
+
+            <div class="mb-12">
+              <h2 class="mb-6 font-bold text-2xl">
+                Why is Responsive Design Important?
+              </h2>
+
+              <div class="mb-8 text-lg">
+                <h2 class="capitalize font-bold text-xl mb-2">
+                  1. improve user experience
+                </h2>
+                <p class="mb-4">
+                  A responsive website adjusts seamlessly to different screen
+                  sizes, providing a consistent and enjoyable user experience.
+                  When users visit a website that looks good and functions well
+                  on their device, they are more likely to stay longer, explore
+                  more, and return in the future.
+                </p>
+                <p>
+                  On the other hand, a website that is difficult to navigate on
+                  a mobile device can frustrate users and drive them away.
+                </p>
+              </div>
+
+              <div class="mb-8 text-lg">
+                <h2 class="capitalize font-bold text-xl mb-2">
+                  2. Increased Mobile Traffic
+                </h2>
+                <p class="mb-4">
+                  With the rapid growth of mobile internet usage, having a
+                  mobile-friendly website is more important than ever. According
+                  to Statista, mobile devices accounted for over 50% of global
+                  web traffic in 2021.
+                </p>
+
+                <p>
+                  By implementing responsive design, you can ensure that your
+                  website is accessible to this large and growing audience,
+                  maximizing your reach and potential conversions.
+                </p>
+              </div>
+
+              <div class="mb-8 text-lg">
+                <h2 class="capitalize font-bold text-xl mb-2">
+                  3. Cost-Effective Development and Maintenance
+                </h2>
+                <p class="mb-4">
+                  In the past, web developers often created separate versions of
+                  a website for desktop and mobile users. This approach was not
+                  only time-consuming but also costly, as it required
+                  maintaining two different websites.
+                </p>
+
+                <p>
+                  Responsive design eliminates the need for multiple versions by
+                  creating a single website that adapts to all devices. This not
+                  only saves time and money during development but also
+                  simplifies ongoing maintenance.
+                </p>
+              </div>
+
+              <div class="mb-8 text-lg">
+                <h2 class="capitalize font-bold text-xl mb-2">
+                  4. Better SEO Performance
+                </h2>
+                <p class="mb-4">
+                  Search engines, particularly Google, prioritize
+                  mobile-friendly websites in their search results. In 2015,
+                  Google introduced the "Mobilegeddon" update, which increased
+                  the ranking of mobile-friendly websites.
+                </p>
+
+                <p>
+                  By adopting responsive design, you can improve your website's
+                  search engine optimization (SEO) and increase your chances of
+                  appearing higher in search results. This leads to more organic
+                  traffic and greater visibility for your website.
+                </p>
+              </div>
+
+              <div class="text-lg">
+                <h2 class="capitalize font-bold text-xl mb-2">
+                  5. Future-Proofing Your Website
+                </h2>
+                <p class="mb-4">
+                  Technology is constantly evolving, and new devices with
+                  varying screen sizes and resolutions are being introduced
+                  regularly. Responsive design provides a flexible and adaptable
+                  foundation for your website, ensuring it remains functional
+                  and visually appealing across future devices.
+                </p>
+
+                <p>
+                  This future-proofing aspect of responsive design is essential
+                  for maintaining a strong online presence in an ever-changing
+                  digital landscape.
+                </p>
+              </div>
+            </div>
+
+            <div class="mb-12">
+              <div class="mb-6">
+                <h2 class="mb-2 font-bold text-2xl">
+                  Key Principles of Responsive Design
+                </h2>
+                <p class="text-lg">
+                  To implement responsive design effectively, web developers
+                  should follow these key principles:
+                </p>
+              </div>
+
+              <div class="mb-8 text-lg">
+                <h2 class="capitalize font-bold text-xl mb-2">
+                  1. Fluid Grids
+                </h2>
+                <p class="mb-4">
+                  Fluid grids use relative units like percentages instead of
+                  fixed units like pixels to define the layout of a webpage.
+                </p>
+
+                <p>
+                  This allows the layout to resize proportionally based on the
+                  screen size, ensuring that content is displayed correctly on
+                  all devices.
+                </p>
+              </div>
+
+              <div class="mb-8 text-lg">
+                <h2 class="capitalize font-bold text-xl mb-2">
+                  2. Flexible Images
+                </h2>
+                <p class="mb-4">
+                  Flexible images are designed to scale within the constraints
+                  of their containing element, preventing them from overflowing
+                  or being too large for the screen.
+                </p>
+
+                <p>
+                  This can be achieved using CSS techniques such as max-width:
+                  100%, which ensures that images resize proportionally while
+                  maintaining their aspect ratio.
+                </p>
+              </div>
+
+              <div class="text-lg">
+                <h2 class="capitalize font-bold text-xl mb-2">
+                  3. CSS Media Queries
+                </h2>
+                <p class="mb-4">
+                  CSS media queries enable developers to apply different styles
+                  based on the characteristics of the user's device, such as
+                  screen width, height, and orientation.
+                </p>
+
+                <p>
+                  By using media queries, developers can create breakpoints
+                  where the layout and design of the website change to provide
+                  an optimal user experience for different devices.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h2 class="text-2xl font-bold mb-4">Conclusion</h2>
+              <p>
+                Responsive design is no longer a luxury but a necessity in the
+                modern web development landscape. By ensuring that your website
+                is accessible and user-friendly across all devices, you can
+                provide a better user experience, increase mobile traffic,
+                reduce development and maintenance costs, improve SEO
+                performance, and future-proof your website.
+              </p>
+
+              <p class="mt-6">
+                As a web developer, embracing responsive design principles is
+                essential for creating successful and sustainable websites that
+                meet the needs of today's diverse audience.
+              </p>
+              <p class="mt-6">
+                Remember, the key to a great website is not just how it looks,
+                but how it works for all users, no matter what device they are
+                using. Responsive design ensures that your website is ready for
+                the present and the future, providing a solid foundation for
+                your online success.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- related -->
+      <section class="bg-white bg-opacity-80 mb-20">
+        <div class="px-6 py-10 md:pt-10 md:pb-32 md:px-20">
+          <h1 class="mb-6 font-jost font-bold text-4xl md:text-5xl">Related</h1>
+          <div class="flex flex-col gap-6 lg:flex-row lg:gap-10">
+            <a
+              class="transition-all duration-300 hover:scale-105"
+              href="blog.html"
+            >
+              <div class="flex gap-6 items-center">
+                <div class="w-full h-auto">
+                  <img
+                    class="w-full bg-black bg-opacity-25 object-cover rounded-xl md:w-420"
+                    src="images/html css.png"
+                    alt="blog"
+                  />
+                </div>
+                <div class="w-full">
+                  <h2 class="font-bold text-2xl">Post 1</h2>
+                  <p class="capitalize font-medium lg:text-lg">
+                    Understanding the basics of HTML and CSS
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a
+              class="transition-all duration-300 hover:scale-105"
+              href="post2.html"
+            >
+              <div class="flex gap-6 items-center">
+                <div class="w-full h-auto">
+                  <img
+                    class="w-full bg-black bg-opacity-25 object-cover rounded-xl md:w-600"
+                    src="images/tetris.jpg"
+                    alt="blog"
+                  />
+                </div>
+                <div class="w-full">
+                  <h2 class="font-bold text-2xl">Post 2</h2>
+                  <p class="capitalize font-medium lg:text-lg">
+                    building my first javascript project
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="relative">
+          <div
+            class="absolute w-full h-40 left-0 bottom-0 bg-white -z-10"
+          ></div>
+          <div
+            class="text-white bg-royalblue p-6 md:px-8 mx-6 md:mx-20 md:py-32 lg:md:px-24"
+          >
+            <h1 class="font-jost text-center text-3xl mb-4 font-bold uppercase">
+              Contact Me
+            </h1>
+            <p class="text-center mb-6">
+              If you have any questions or would like to discuss web
+              development, feel free to reach out to me!
+            </p>
+            <div
+              class="flex items-center justify-center flex-col gap-4 md:flex-row"
+            >
+              <button
+                class="text-sm py-2 px-6 bg-white text-black font-bold rounded-lg border-black border-2 transition-all duration-300 hover:bg-cobaltblue hover:text-white hover:border-white"
+              >
+                <a href="contact.html">GET STARTED</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-white flex items-center justify-center pt-20 pb-32">
+      <nav class="flex flex-col items-center">
+        <a class="mb-4" href="index.html"
+          ><img class="w-32" src="./LexMB..png" alt="icon"
+        /></a>
+
+        <ul class="uppercase flex items-center gap-3 md:gap-6 mb-4 font-bold">
+          <li class="transition-all duration-300 hover:text-cobaltblue">
+            <a href="index.html">home</a>
+          </li>
+
+          <li class="link transition-all duration-300 hover:text-cobaltblue">
+            <a href="#contact">contact</a>
+          </li>
+        </ul>
+        <p>Copyright ©2024 All rights reserved</p>
+      </nav>
+    </footer>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EasePack.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
