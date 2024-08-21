@@ -14,7 +14,7 @@ document.addEventListener(
 
       scrollTrigger: {
         trigger: ".fade-in",
-        toggleActions: "restart none restart pause",
+        toggleActions: "restart none none pause",
       },
     });
     gsap.from(".hero-fade-in", {
@@ -40,7 +40,7 @@ document.addEventListener(
       end: "bottom top",
       scrollTrigger: {
         trigger: ".cards",
-        toggleActions: "restart none restart pause",
+        toggleActions: "restart none none pause",
       },
     });
     gsap.from(".cards2", {
@@ -54,7 +54,7 @@ document.addEventListener(
       end: "bottom top",
       scrollTrigger: {
         trigger: ".cards2",
-        toggleActions: "restart none restart pause",
+        toggleActions: "restart none none pause",
       },
     });
     gsap.from(".cards3", {
